@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Books</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+    <h1>Add a new Book</h1>
+    <form action="/books" method="POST">
+        <div class="form-row">
+        <div class="form-group col-3">
+            <label for="isbn">ISBN</label>
+            <input type="number" class="form-control" name="isbn" id="isbn">
+        </div>
+        <div class="form-group col-6">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" id="title">
+        </div>
+        <div class="form-group col-3">
+            <label for="author">Author</label>
+            <input type="text" class="form-control" name="author" id="author">
+        </div>
+        </div>  
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+{% endblock %}
