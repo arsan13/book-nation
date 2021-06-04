@@ -23,8 +23,13 @@ Create a virtual environment
 
 Activate the virtual environment
 
+Windows
 ```bash
   venv\Scripts\activate
+```
+Linux
+```bash
+  source venv/bin/activate
 ```
 
 Install dependencies
